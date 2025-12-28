@@ -23,3 +23,4 @@ Users enter a keyword, submit the form, and the site displays matching GIF resul
 4. Add a favorites feature using localStorage.
 5. Add base HTML layout
 6. Add header flex styling
+7. Add search form layout
