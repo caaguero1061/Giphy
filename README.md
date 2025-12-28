@@ -27,3 +27,4 @@ Users enter a keyword, submit the form, and the site displays matching GIF resul
 8. Add Giphy fetch function
 9. Add loading status text
 10. Add empty results handling
+11. Deploy to GitHub Pages
