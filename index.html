@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GIF Finder</title>
+
+    <!-- Google Font (choose one you’ve never heard of before) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Example: "Rubik Dirt" (replace if you want) -->
+    <link href="https://fonts.googleapis.com/css2?family=Rubik+Dirt&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+
+  <body>
+    <header class="site-header container">
+      <h1 class="site-title">GIF Finder</h1>
+
+      <nav class="site-nav">
+        <a href="#" class="nav-link">Home</a>
+        <a href="#" class="nav-link">Trending</a>
+        <a href="#" class="nav-link">About</a>
+      </nav>
+    </header>
+
+    <main class="container">
+      <section class="search-section">
+        <form id="searchForm" class="search-form">
+          <input
+            id="searchInput"
+            class="search-input"
+            type="search"
+            placeholder="Search for GIFs..."
+            aria-label="Search for GIFs"
+            required
+          />
+          <button class="search-button" type="submit">Search</button>
+        </form>
+
+        <p id="statusText" class="status-text" aria-live="polite"></p>
+      </section>
+
+      <section>
+        <div id="results" class="grid"></div>
+      </section>
+    </main>
+
+    <script src="./main.js"></script>
+  </body>
+</html>

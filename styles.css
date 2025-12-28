@@ -1,0 +1,105 @@
+/* Base */
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  line-height: 1.4;
+}
+
+.container {
+  width: min(1100px, 92%);
+  margin: 0 auto;
+}
+
+/* Header (Desktop: title left, nav right using flex) */
+.site-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 0;
+}
+
+.site-title {
+  margin: 0;
+  font-family: "Rubik Dirt", system-ui; // ✅ Google Font applied to title
+  font-size: 2rem;
+}
+
+.site-nav {
+  display: flex;
+  gap: 14px;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: #111;
+}
+
+/* Search row (input + button side-by-side using flex) */
+.search-section {
+  padding: 10px 0 18px;
+}
+
+.search-form {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.search-input {
+  flex: 1;
+  padding: 12px;
+  font-size: 1rem;
+}
+
+.search-button {
+  padding: 12px 16px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.status-text {
+  margin: 10px 0 0;
+  min-height: 1.2em;
+}
+
+/* Custom grid classes using flex */
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.gif-card {
+  flex: 0 0 calc(25% - 12px); // ~4 columns on desktop
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.gif-img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+/* Mobile 320px and below */
+@media (max-width: 320px) {
+  /* 11) Title and navbar stack vertically */
+  .site-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  /* 12) Nav items stack vertically */
+  .site-nav {
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  /* 13) Images stack vertically in a single column */
+  .gif-card {
+    flex: 0 0 100%;
+  }
+}
