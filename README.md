@@ -6,7 +6,7 @@ This project is a one-page website that allows users to search for GIFs using th
 Users enter a keyword, submit the form, and the site displays matching GIF results in a responsive grid.
 
 ## How to Use
-1. Type a keyword into the search bar
+1.
 2. Click **Search**.
 3. Scroll through the GIF results displayed below the search area.
 
