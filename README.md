@@ -21,4 +21,3 @@ Users enter a keyword, submit the form, and the site displays matching GIF resul
 2. Add pagination or “Load More” for additional results.
 3. Add filters (rating, limit slider, or sorting).
 4. Add a favorites feature using localStorage.
-init project structure
